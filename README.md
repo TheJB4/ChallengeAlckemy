@@ -1,0 +1,4 @@
+# ChallengeAlckemy
+
+#Para comenzar:
+  1)NPM START EN CADA CARPETA. ENTRAR EN CADA UNA Y REALIZAR NPM INSTALL
