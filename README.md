@@ -17,3 +17,6 @@
   {(data.length === 0) ? <CrudTable data={[]} setData={setData}/> : <CrudTable data={data} setData={setData}/>}
   9)Una vez seguido todos los pasos anteriores. no deberiamos tener problemas probando la app. :3
 }
+
+
+para poder ver bien este readme apretar el boton editar
