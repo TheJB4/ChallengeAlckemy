@@ -16,6 +16,7 @@ function peticionFetch() {
 
         if(myUser.status === 200){
             console.log('El usuario no existe, pero se ha registrado con exito')
+            alert('El usuario no existe, pero se ha registrado con exito, porfavor. Logueate de nuevo!')
         }
     }catch(err){
         console.log(err)
