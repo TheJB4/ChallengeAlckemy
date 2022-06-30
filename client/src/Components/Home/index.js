@@ -12,10 +12,10 @@ export default function MyHome(){
             let data = await fetch(`/operations/${userId}`)
             let myOperations = await data.json()
             
-            if(myOperations.length === 0){
+            if(data.status === 404){
                 setData([])
             }else{
-                 setData(myOperations)
+                setData(myOperations)
             }
         }
 
@@ -24,7 +24,7 @@ export default function MyHome(){
     return(
         <Container>
             <h1 style={{textAlign: 'center'}}>Hola! Bienvenido {localStorage.getItem('User')}</h1>
-            {(!data) ? <CrudTable data={[]} setData={setData}/> : <CrudTable data={data} setData={setData}/>}
+           <CrudTable data={data} setData={setData}/>
         </Container>
     )
 }
