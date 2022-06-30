@@ -12,7 +12,11 @@ export default function MyHome(){
             let data = await fetch(`/operations/${userId}`)
             let myOperations = await data.json()
             
-            setData(myOperations)
+            if(myOperations.length === 0){
+                setData([])
+            }else{
+                 setData(myOperations)
+            }
         }
 
         getAllOperations()
